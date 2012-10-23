@@ -1,39 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Simplemapview : Observing huge remote screens (which could be represented as a tile's set)" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Simplemapview by gorgon</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>Simplemapview</title>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/gorgon/SimpleMapView">View on GitHub</a>
-
-          <h1 id="project_title">Simplemapview</h1>
-          <h2 id="project_tagline">Observing huge remote screens (which could be represented as a tile's set)</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/gorgon/SimpleMapView/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/gorgon/SimpleMapView/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div class="wrapper">
+      <header>
+        <h1>Simplemapview</h1>
+        <p>Observing huge remote screens (which could be represented as a tile's set)</p>
+        <p class="view"><a href="https://github.com/gorgon/SimpleMapView">View the Project on GitHub <small>gorgon/SimpleMapView</small></a></p>
+        <ul>
+          <li><a href="https://github.com/gorgon/SimpleMapView/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/gorgon/SimpleMapView/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/gorgon/SimpleMapView">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h3>Welcome to SimpleMapView project</h3>
 
-<p>It can help you to understand some ideas aboutmanaging a huge remote field which could be divided into tiles.</p>
+<p>It can help you to understand some ideas about managing a huge remote field/map which could be divided into tiles.</p>
 
 <p>Main ideas:</p>
 
@@ -45,22 +41,27 @@
 <li>Disc cache</li>
 </ul>
 </li>
-<li>Disc cache and remote requests are handled asynchronously</li>
-<li>To prevent handling tiles for fast scrolled screens 2 request queues are used inside asynchronous handler</li>
-<li>To prevent OutOfMemory error RAM bitmaps are store as a limited pull and re-used after RAM size reaches its maximum (could be configured) size</li>
+<li>Disc cache access (save/read) and remote requests are handled asynchronously</li>
+<li>To prevent handling tiles for fast scrolled screens
+
+<ul>
+<li>2 request queues are used inside asynchronous handler</li>
+</ul>
+</li>
+<li>To prevent OutOfMemory error
+
+<ul>
+<li>RAM bitmaps are stored as a limited pull and re-used after RAM size reaches its maximum (could be configured) size</li>
+</ul>
+</li>
 </ul>
       </section>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Simplemapview maintained by <a href="https://github.com/gorgon">gorgon</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+    <footer>
+      <p>Project maintained by <a href="https://github.com/gorgon">gorgon</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
