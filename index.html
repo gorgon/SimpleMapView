@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Simplemapview : Observing huge remote screens (which could be represented as a tile's set)" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Simplemapview</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gorgon/SimpleMapView">View on GitHub</a>
+
+          <h1 id="project_title">Simplemapview</h1>
+          <h2 id="project_tagline">Observing huge remote screens (which could be represented as a tile's set)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/gorgon/SimpleMapView/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/gorgon/SimpleMapView/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Welcome to SimpleMapView project</h3>
+
+<p>It can help you to understand some ideas aboutmanaging a huge remote field which could be divided into tiles.</p>
+
+<p>Main ideas:</p>
+
+<ul>
+<li>2 cache levels:
+
+<ul>
+<li>RAM cache</li>
+<li>Disc cache</li>
+</ul>
+</li>
+<li>Disc cache and remote requests are handled asynchronously</li>
+<li>To prevent handling tiles for fast scrolled screens 2 request queues are used inside asynchronous handler</li>
+<li>To prevent OutOfMemory error RAM bitmaps are store as a limited pull and re-used after RAM size reaches its maximum (could be configured) size</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Simplemapview maintained by <a href="https://github.com/gorgon">gorgon</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
