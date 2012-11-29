@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleMapView</string>
+    <string name="tile_url_template">http://vec.maps.yandex.net/tiles?l=map&amp;v=2.21.0&amp;x=%1$s&amp;y=%2$s&amp;z=10</string>
+
+</resources>
